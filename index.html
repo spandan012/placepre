@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlacePrep</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PlacePrep</div>
+            <ul>
+                <li><a href="#" data-tier="1">Tier 1</a></li>
+                <li><a href="#" data-tier="2">Tier 2</a></li>
+                <li><a href="#" data-tier="3">Tier 3</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>PlacePrep</h1>
+        <p class="subtitle">Navigate your placement journey with confidence</p>
+
+        <section id="tier1" class="tier-section">
+            <h2>Tier 1 Companies</h2>
+            <p>Top-tier companies offering high salary packages and challenging roles</p>
+            <div class="company-grid">
+                <div class="company" data-company="google">Google</div>
+                <div class="company" data-company="microsoft">Microsoft</div>
+                <div class="company" data-company="amazon">Amazon</div>
+                <div class="company" data-company="apple">Apple</div>
+            </div>
+        </section>
+
+        <section id="tier2" class="tier-section">
+            <h2>Tier 2 Companies</h2>
+            <p>Well-established companies with competitive packages and good growth opportunities</p>
+            <div class="company-grid">
+                <div class="company" data-company="ibm">IBM</div>
+                <div class="company" data-company="intel">Intel</div>
+                <div class="company" data-company="oracle">Oracle</div>
+                <div class="company" data-company="salesforce">Salesforce</div>
+            </div>
+        </section>
+
+        <section id="tier3" class="tier-section">
+            <h2>Tier 3 Companies</h2>
+            <p>Emerging companies and startups offering diverse roles and learning experiences</p>
+            <div class="company-grid">
+                <div class="company" data-company="startup-a">Startup A</div>
+                <div class="company" data-company="startup-b">Startup B</div>
+                <div class="company" data-company="startup-c">Startup C</div>
+                <div class="company" data-company="startup-d">Startup D</div>
+            </div>
+        </section>
+    </main>
+
+    <div id="companyDetails" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="companyName"></h2>
+            <p>This is a placeholder for the detailed information about the company. In a full implementation, this section would include:</p>
+            <ul>
+                <li>Interview process</li>
+                <li>Salary packages</li>
+                <li>Common practices</li>
+                <li>Job roles</li>
+                <li>Company culture</li>
+                <li>And more...</li>
+            </ul>
+            <p>The actual content would be dynamically loaded based on the selected company.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
