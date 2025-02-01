@@ -1,3 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlacePrep</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PlacePrep</div>
+            <ul>
+                <li><a href="#" class="active">Companies</a></li>
+                <li><a href="#">Practice</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Prepare for Your Dream Company</h1>
+        <p class="subtitle">Comprehensive interview preparation guides for top tech companies</p>
+
+        <div class="companies-grid">
+            <div class="company-card microsoft" onclick="location.href='microsoft.html'">
+                <img src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_256px.png" alt="Microsoft Logo" class="company-logo">
+                <h2>Microsoft</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at Microsoft</li>
+                    <li>Tips for interviewing at Microsoft</li>
+                    <li>100+ Interview Questions Asked at Microsoft</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+
+            <div class="company-card google">
+                <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google Logo" class="company-logo">
+                <h2>Google</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at Google</li>
+                    <li>Tips for interviewing at Google</li>
+                    <li>70+ Interview Questions Asked at Google</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+
+            <div class="company-card amazon">
+                <img src="https://pngimg.com/uploads/amazon/amazon_PNG21.png" alt="Amazon Logo" class="company-logo">
+                <h2>Amazon</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at Amazon</li>
+                    <li>Tips for interviewing at Amazon</li>
+                    <li>100+ Interview Questions Asked at Amazon</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,68 +78,164 @@
         <nav>
             <div class="logo">PlacePrep</div>
             <ul>
-                <li><a href="#" data-tier="1">Tier 1</a></li>
-                <li><a href="#" data-tier="2">Tier 2</a></li>
-                <li><a href="#" data-tier="3">Tier 3</a></li>
+                <li><a href="#" class="active">Companies</a></li>
+                <li><a href="#">Practice</a></li>
+                <li><a href="#">Resources</a></li>
             </ul>
-            <div class="menu-toggle">&#9776;</div>
         </nav>
     </header>
 
     <main>
-        <h1>PlacePrep</h1>
-        <p class="subtitle">Navigate your placement journey with confidence</p>
+        <h1>Prepare for Your Dream Company</h1>
+        <p class="subtitle">Comprehensive interview preparation guides for top tech companies</p>
 
-        <section id="tier1" class="tier-section">
-            <h2>Tier 1 Companies</h2>
-            <p>Top-tier companies offering high salary packages and challenging roles</p>
-            <div class="company-grid">
-                <div class="company" data-company="google">Google</div>
-                <div class="company" data-company="microsoft">Microsoft</div>
-                <div class="company" data-company="amazon">Amazon</div>
-                <div class="company" data-company="apple">Apple</div>
+        <!-- Tier 1 Companies -->
+        <section class="tier-section">
+            <div class="tier-header">
+                <h2>Tier 1 Companies</h2>
+                <p class="tier-description">
+                    Top-tier technology companies known for their exceptional compensation packages, innovative work culture, 
+                    and highly competitive interview processes. These companies typically offer base salaries ranging from 
+                    $150,000 to $200,000+ for software engineers, along with substantial stock options and bonuses.
+                </p>
+            </div>
+            <div class="companies-grid">
+                <div class="company-card microsoft" onclick="location.href='microsoft.html'">
+                    <img src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_256px.png" alt="Microsoft Logo" class="company-logo">
+                    <h2>Microsoft</h2>
+                    <h3>Interview Questions</h3>
+                    <ul>
+                        <li>Interview Process at Microsoft</li>
+                        <li>Tips for interviewing at Microsoft</li>
+                        <li>100+ Interview Questions Asked</li>
+                    </ul>
+                    <button class="view-guide-btn">View Full Guide</button>
+                </div>
+
+                <div class="company-card google">
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google Logo" class="company-logo">
+                    <h2>Google</h2>
+                    <h3>Interview Questions</h3>
+                    <ul>
+                        <li>Interview Process at Google</li>
+                        <li>Tips for interviewing at Google</li>
+                        <li>70+ Interview Questions Asked</li>
+                    </ul>
+                    <button class="view-guide-btn">View Full Guide</button>
+                </div>
+
+                <div class="company-card amazon">
+                    <img src="https://pngimg.com/uploads/amazon/amazon_PNG21.png" alt="Amazon Logo" class="company-logo">
+                    <h2>Amazon</h2>
+                    <h3>Interview Questions</h3>
+                    <ul>
+                        <li>Interview Process at Amazon</li>
+                        <li>Tips for interviewing at Amazon</li>
+                        <li>100+ Interview Questions Asked</li>
+                    </ul>
+                    <button class="view-guide-btn">View Full Guide</button>
+                </div>
             </div>
         </section>
 
-        <section id="tier2" class="tier-section">
-            <h2>Tier 2 Companies</h2>
-            <p>Well-established companies with competitive packages and good growth opportunities</p>
-            <div class="company-grid">
-                <div class="company" data-company="ibm">IBM</div>
-                <div class="company" data-company="intel">Intel</div>
-                <div class="company" data-company="oracle">Oracle</div>
-                <div class="company" data-company="salesforce">Salesforce</div>
+        <!-- Tier 2 Companies -->
+        <section class="tier-section">
+            <div class="tier-header">
+                <h2>Tier 2 Companies</h2>
+                <p class="tier-description">
+                    Well-established technology companies and unicorn startups offering competitive compensation and excellent 
+                    growth opportunities. These companies typically offer base salaries ranging from $100,000 to $150,000 for 
+                    software engineers, with good benefits and work-life balance.
+                </p>
+            </div>
+            <div class="companies-grid">
+                <div class="company-card uber">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-01%20193243-cC5R6C9FwNOIf7yIJkaKpS2PdF0D34.png" alt="Uber Logo" class="company-logo">
+                    <h2>Uber</h2>
+                    <h3>Interview Questions</h3>
+                    <ul>
+                        <li>Interview Process at Uber</li>
+                        <li>Tips for interviewing at Uber</li>
+                        <li>60+ Interview Questions Asked</li>
+                    </ul>
+                    <button class="view-guide-btn">View Full Guide</button>
+                </div>
+
+                <div class="company-card adobe">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-01%20193243-cC5R6C9FwNOIf7yIJkaKpS2PdF0D34.png" alt="Adobe Logo" class="company-logo">
+                    <h2>Adobe</h2>
+                    <h3>Interview Questions</h3>
+                    <ul>
+                        <li>Interview Process at Adobe</li>
+                        <li>Tips for interviewing at Adobe</li>
+                        <li>50+ Interview Questions Asked</li>
+                    </ul>
+                    <button class="view-guide-btn">View Full Guide</button>
+                </div>
+
+                <div class="company-card salesforce">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-01%20193243-cC5R6C9FwNOIf7yIJkaKpS2PdF0D34.png" alt="Salesforce Logo" class="company-logo">
+                    <h2>Salesforce</h2>
+                    <h3>Interview Questions</h3>
+                    <ul>
+                        <li>Interview Process at Salesforce</li>
+                        <li>Tips for interviewing at Salesforce</li>
+                        <li>55+ Interview Questions Asked</li>
+                    </ul>
+                    <button class="view-guide-btn">View Full Guide</button>
+                </div>
             </div>
         </section>
 
-        <section id="tier3" class="tier-section">
-            <h2>Tier 3 Companies</h2>
-            <p>Emerging companies and startups offering diverse roles and learning experiences</p>
-            <div class="company-grid">
-                <div class="company" data-company="startup-a">Startup A</div>
-                <div class="company" data-company="startup-b">Startup B</div>
-                <div class="company" data-company="startup-c">Startup C</div>
-                <div class="company" data-company="startup-d">Startup D</div>
+        <!-- Tier 3 Companies -->
+        <section class="tier-section">
+            <div class="tier-header">
+                <h2>Tier 3 Companies</h2>
+                <p class="tier-description">
+                    Growing technology companies and promising startups offering good learning opportunities and work 
+                    experience. These companies typically offer base salaries ranging from $70,000 to $100,000 for 
+                    software engineers, with potential for rapid growth and skill development.
+                </p>
+            </div>
+            <div class="companies-grid">
+                <div class="company-card mindtree">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-01%20193243-cC5R6C9FwNOIf7yIJkaKpS2PdF0D34.png" alt="Mindtree Logo" class="company-logo">
+                    <h2>Mindtree</h2>
+                    <h3>Interview Questions</h3>
+                    <ul>
+                        <li>Interview Process at Mindtree</li>
+                        <li>Tips for interviewing at Mindtree</li>
+                        <li>40+ Interview Questions Asked</li>
+                    </ul>
+                    <button class="view-guide-btn">View Full Guide</button>
+                </div>
+
+                <div class="company-card infosys">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-01%20193243-cC5R6C9FwNOIf7yIJkaKpS2PdF0D34.png" alt="Infosys Logo" class="company-logo">
+                    <h2>Infosys</h2>
+                    <h3>Interview Questions</h3>
+                    <ul>
+                        <li>Interview Process at Infosys</li>
+                        <li>Tips for interviewing at Infosys</li>
+                        <li>45+ Interview Questions Asked</li>
+                    </ul>
+                    <button class="view-guide-btn">View Full Guide</button>
+                </div>
+
+                <div class="company-card wipro">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-01%20193243-cC5R6C9FwNOIf7yIJkaKpS2PdF0D34.png" alt="Wipro Logo" class="company-logo">
+                    <h2>Wipro</h2>
+                    <h3>Interview Questions</h3>
+                    <ul>
+                        <li>Interview Process at Wipro</li>
+                        <li>Tips for interviewing at Wipro</li>
+                        <li>35+ Interview Questions Asked</li>
+                    </ul>
+                    <button class="view-guide-btn">View Full Guide</button>
+                </div>
             </div>
         </section>
     </main>
-
-    <div id="companyDetails" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="companyName"></h2>
-            <p>This is a placeholder for the detailed information about the company. In a full implementation, this section would include:</p>
-            <ul>
-                <li>Interview process</li>
-                <li>Salary packages</li>
-                <li>Common practices</li>
-                <li>Job roles</li>
-                <li>Company culture</li>
-                <li>And more...</li>
-            </ul>
-            <p>The actual content would be dynamically loaded based on the selected company.</p>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
