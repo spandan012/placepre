@@ -1,11 +1,13 @@
 
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+ 
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -13,11 +15,36 @@ body {
 }
 
 .header {
-    background-color: #4285F4;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: rgb(220, 216, 216);
+    color: rgb(0, 0, 0);
+    padding: 3% 5%; /* Adjusted padding using percentages */
+    font-size: 2.5rem; /* Font size is set in rem for better scaling */
+    height: 150px;
+    text-align: center; /* Centered text for better layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+        height: auto; /* Allow header height to adjust dynamically */
+        padding: 4% 5%; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Media query for extra small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+    .header {
+        font-size: 1.5rem; /* Even smaller font size for very small screens */
+        padding: 5% 5%; /* Adjust padding further for smaller screens */
+    }
+}
+
+
+
 
 .content-wrapper {
     display: flex;
@@ -26,8 +53,11 @@ body {
 }
 
 .sidebar {
-    width: 300px;
-    background-color: #f8f9fa;
+    margin: 100px 20px 20px 10px;
+    height: max-content;
+    border-radius: 20px;
+    width: 400px;
+    background-color: #f3f2f2;
     padding: 20px;
     overflow-y: auto;
     border-right: 1px solid #dee2e6;
@@ -38,6 +68,10 @@ body {
 }
 
 .sidebar-header {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,6 +83,8 @@ body {
 }
 
 .sidebar-content {
+    font-size: 16px;
+    color: rgb(76, 75, 75);
     display: none;
     padding: 10px;
     background-color: white;
@@ -69,9 +105,106 @@ body {
     transform: rotate(180deg);
 }
 
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.sidebar {
+    margin: 100px 20px 20px 10px;
+    height: max-content;
+    border-radius: 20px;
+    width: 400px;
+    background-color: #f9f9f9; /* Lighter background color */
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #dee2e6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.sidebar-item {
+    margin-bottom: 10px;
+}
+
+.sidebar-header {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.sidebar-content {
+    font-size: 16px;
+    color: rgb(76, 75, 75);
+    display: none;
+    padding: 10px;
+    background-color: white;
+    margin-top: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.sidebar-content.active {
+    display: block;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.active {
+    transform: rotate(180deg);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack the content vertically on smaller screens */
+    }
+
+    .sidebar {
+        width: 100%; /* Make sidebar full width on smaller screens */
+        margin: 20px 10px 20px 10px; /* Adjust margins for mobile */
+    }
+
+    .sidebar-header {
+        font-size: 16px; /* Slightly smaller font size on smaller screens */
+    }
+
+    .sidebar-content {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%; /* Ensure full width on very small screens */
+        margin: 10px; /* Adjust margins for very small screens */
+    }
+
+    .sidebar-header {
+        font-size: 14px; /* Smaller font size for very small screens */
+    }
+
+    .sidebar-content {
+        font-size: 12px; /* Even smaller font size for smaller screens */
+    }
+}
+
+
 .main-content {
     flex: 1;
-    padding: 20px 0; /* Updated padding */
+    
+    padding: 20px 0 80px 0; /* Updated padding */
     overflow-y: auto;
     height: calc(100vh - 60px);
 }
@@ -81,6 +214,10 @@ body {
     line-height: 1.6;
     padding: 0 20px; /* Added padding */
 }
+#t1{
+    color: #515151;
+    font-size: 40px;
+}
 
 .content-page {
     margin-bottom: 40px;
@@ -88,11 +225,54 @@ body {
 }
 
 .content-page p {
+    color: #355453;
+    font-family: sans-serif;
+    font-size: 20px;
     margin-bottom: 15px;
     text-align: justify;
     hyphens: auto;
     word-wrap: break-word;
     overflow-wrap: break-word;
+}
+#t2{
+    color: #515151;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+strong{
+    color: #355453;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+li{
+    color: #355453;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.content-page h1, .content-page h2, .content-page h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #343a40;
+}
+
+.content-page h2 {
+    font-size: 22px;
+}
+
+.content-page h3 {
+    font-size: 20px;
+}
+
+.content-page ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    font-size: 18px;
+}
+
+.content-page ul li {
+    margin-bottom: 10px;
 }
 
 .sidebar-content p {
