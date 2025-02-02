@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Interview Guide</title>
+    
+    <link rel="stylesheet" href="G.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Google Interview Guide</h1>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="sidebar">
+            <div class="sidebar-item">
+                <div class="sidebar-header">
+                    <span>Interview Overview and FAQ</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="sidebar-content">
+                    <p data-target="interview-process">What is unique about Google interviews?</p>
+                    <p data-target="interview-rounds">What does Google look for in a candidate?</p>
+                </div>
+            </div>
+
+            <div class="sidebar-item">
+                <div class="sidebar-header">
+                    <span>Google Interview Process</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="sidebar-content">
+                    <p data-target="preparation-tips">Step 1: Before the Interview</p>
+                    <p data-target="coding-practice">Step 2: Prescreen with Google Employee</p>
+                    <p data-target="behavioral-questions">On-site interviews</p>
+                    <p data-target="behavioral-questions">The offer / no offer</p>
+                </div>
+            </div>
+
+            <div class="sidebar-item">
+                <div class="sidebar-header">
+                    <span>Coding Interview Question Guide</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="sidebar-content">
+                    <p data-target="faq-general">Top 15 Google coding interview questions</p>
+                    <!-- <p data-target="faq-technical">Technical FAQs</p> -->
+                </div>
+            </div>
+
+            <div class="sidebar-item">
+                <div class="sidebar-header">
+                    <span>Behavioral Interview Question Guide</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="sidebar-content">
+                    <p data-target="coding-questions">What to expect from a Google behavioral interview</p>
+                    <p data-target="coding-tips">How to prepare for behavioral interviews</p>
+                    <p data-target="coding-tips">10 common behavioral interview questions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="content-section">
+
+                <div id="interview-process" class="content-page">
+                    <h1 id="t1">About Company</h1>
+                    <p>
+                        Google is a global technology company founded in 1998 by Larry Page and Sergey Brin. It is best known for its search engine, but it has expanded into various sectors, including cloud computing, artificial intelligence, digital advertising, and hardware. Google operates under its parent company, Alphabet Inc., and provides a range of services like Google Search, YouTube, Google Cloud, and Android.</p>
+                        <p>
+                            Google offers competitive salary packages for different roles. For software engineers in India, the salary ranges from ₹12 LPA (Lakhs Per Annum) to ₹60 LPA, depending on experience and job level. Senior engineers and specialized roles can earn even higher, with total compensation including bonuses and stock options significantly increasing the package. In the U.S., entry-level software engineers typically earn around $120,000 to $150,000 per year, with higher salaries for experienced professionals.</p>
+                </div>
+
+
+                <div id="interview-process" class="content-page">
+                    <h1 id="t1">Overview of Google interviews</h1>
+                    <p>The whole interview process takes 2 to 2.5 months to complete. Google
+                        interviews for software developers consist of 5 to 7 interviews in total. This
+                        includes an initial phone screen with a Google recruiter, followed by 4 to 6
+                        on-site interviews with different Google employees. All coding challenges are
+                        done on a whiteboard, Google Docs, or a Chromebook.</p>
+                    <p>Google normally hires at level T3 with T11 being the height of levels. T3 is an
+                        entry-level, full-time software engineer with an undergraduate or Master’s
+                        degree. The average salary for a T3 employee is $117,000 annually. Google
+                        prefers the following programming languages: Java, C++, C Go, and Python.</p>
+                    <p>There are three types of coding problems you can expect to see in a Google
+                        interview:</p>
+                    <ul>
+                        <li><strong>System design questions:</strong> These questions gauge your ability to
+                            handle high-level system design with scalability in mind.</li>
+                        <li><strong>Coding interview challenges:</strong> These questions gauge your knowledge
+                            of data structures and algorithms to optimize a solution to common problems.</li>
+                        <li><strong>General analysis questions:</strong> These questions gauge your thought
+                            process through mathematical or opinion-based questions.</li>
+                    </ul>
+                
+                    <h2 id="t2">What is unique about Google interviews?</h2>
+                    <p>Though software engineer interviews at Google are similar to other big tech
+                        companies, there are some unique aspects of their process. So, unlike Apple,
+                        Microsoft, or Amazon, what’s different?</p>
+                    <ul>
+                        <li><strong>Clear expectations:</strong> Google is not shy about their interview process, so
+                            there is little guesswork when it comes to preparation or expectations. Google
+                            provides all the details of what to expect on their “careers” page.</li>
+                        <li><strong>Coding in Google Docs:</strong> During the initial phone screen, you will be
+                            expected to code in Google Docs. It’s important to study how to code well on
+                            this platform, as it can take some practice.</li>
+                        <li><strong>Hiring committee:</strong> Google aims to review applicants without bias, so they
+                            utilize a hiring committee for all candidates.</li>
+                        <li><strong>Grading scale:</strong> Each interviewer is graded on a scale of 1-4 based on the four
+                            hiring criteria where 3 is the threshold for hire vs. no hire.</li>
+                        <li><strong>Four hiring criteria:</strong> Google focuses on cognitive ability, “Googleyness”,
+                            leadership skills, and technical skills in their candidate review process. Let’s
+                            break that down in the next section.</li>
+                    </ul>
+                
+                    <h3 id="t2">What does Google look for in a candidate?</h3>
+                    <p><strong>Cognitive ability:</strong> General cognitive ability refers to your problem-solving
+                        skills, abstract thinking, curiosity, and willingness to learn. Google looks for
+                        smart people who can think complexly about themselves, their teams, and their projects.</p>
+                    <p><strong>Googleyness:</strong> Like all organizations, Google has a specific company culture,
+                        and they look for candidates who mesh well with their values. Google’s main
+                        focus is on people; they care about inclusivity and the improvement of human
+                        life while remaining ethical. Google is known for small teams and a laidback
+                        environment to encourage creativity, innovation, and open communication.</p>
+                    <p><strong>Leadership skills:</strong> Google hires candidates with emergent leadership skills.
+                        For Google, leadership is the ability to step in and out of difficult problems
+                        when you are needed while promoting ethics and safety. Google also looks for
+                        those who empower others to self-organize and foster open communication.</p>
+                    <p><strong>Technical skills:</strong> Google hires candidates with the strongest coding abilities,
+                        and they assess technical skills mostly on conceptual understanding, not
+                        memorization. They assess coding skills on the following topics:</p>
+                    <ul>
+                        <li>Algorithms</li>
+                        <li>Sorting</li>
+                        <li>Data structures</li>
+                        <li>Graphs</li>
+                        <li>Recursion</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Big-O Notation</li>
+                        <li>APIs</li>
+                        <li>How to test your code</li>
+                        <li>Mathematics (such as n-choose-k programs)</li>
+                    </ul>
+                </div>
+                
+                
+
+                <div id="interview-rounds" class="content-page">
+                    <h2 id="t1">Google Interview Process</h2>
+                    <h3 id="t2">Step 1: Before the Interview</h3>
+                    <ul>
+                        <li><strong>Preparation</strong> </li>
+                    </ul>
+                    <p>Preparing for a coding interview is a lengthy process. I
+                        encourage three months of preparation in advance. You need a preparation
+                        plan to stay on track. Look at our 3 Month Coding Interview Preparation
+                        Bootcamp for a plan created by real hiring managers. Be sure to prepare using
+                        a language that Google prefers, such as C++, Java, Python, Go, or C.</p>
+                        <ul>
+                            <li><strong>Update your resume.</strong> </li>
+                        </ul>
+                        <p>Your resume needs to catch the attention of a Google
+                            recruiter in six seconds or less. One of the most common reasons talented
+                            applicants don’t get an interview is due to a poorly crafted resume. Spend
+                            some time updating your resume..</p>
+                    <p>If your resume passes the test, they’ll schedule a call to learn more about your
+                        skills and experience. It will be about a week before you hear from the
+                        recruiter.</p>
+                    <h3 id="t2">Step 2: Prescreen with Google Employee</h3>
+                    <p>Your phone screen will last between 45 - 60 minutes, likely on Google
+                        Hangouts. The Google employee will test you with coding questions related to
+                        data structures and algorithms. You will solve these on a Google Doc, using
+                        around 20-30 lines of code.</p>
+                    <p>It is important to communicate your thought process as you work; this is how
+                        they gauge your general cognitive ability.</p>
+                    <p>You can expect an open-ended coding challenge. Asking further questions for
+                        clarification is a great way to demonstrate problem-solving skills. If you finish
+                        before the time ends, look for ways to optimize and check for bugs. Always be
+                        sure to consider corner and edge cases.</p>
+                </div>
+
+                <div id="preparation-tips" class="content-page">
+                    <h2 id="t2">On-site interviews</h2>
+                    <p>If you pass the prescreen, you will be invited to an on-site interview. You will
+                        meet with 4-6 Google employees for 45 minutes each.</p>
+                    <p>These onsite interviews will heavily focus on coding, focusing on data
+                        structures and algorithms. You will be writing code either on a whiteboard or a
+                        Chromebook, which they will provide. It’s a good idea to ask the recruiter
+                        beforehand so you can practice properly.</p>
+                    <p>The on-site interviews also feature behavioral interview questions to assess
+                        who you are as a potential employee. Google wants to see that you fit with
+                        their company values, so be sure to prepare for behavioral interviews as well.
+                        We’ll discuss this more later..</p>
+                   
+                </div>
+
+                <div id="preparation-tips" class="content-page">
+                    <h2 id="t2">The offer / no offer</h2>
+                    <p>You will be scored on a scale of 1-4, with 3 being the threshold of hire or
+                        no-hire. Once your interviews are complete, the feedback will be sent to a
+                        hiring committee to make the final decision. This process can take several
+                        weeks, and it’s okay to send a friendly nudge email if too much time has
+                        passed.</p>
+                    <p>If you get an offer, be ready to discuss salary and start date, so it’s a good idea
+                        to brush up on negotiation skills. If you do not get the offer, you may have to
+                        wait six months to reapply, which gives you plenty of time to prepare and
+                        study up on your weak points.</p>
+             
+                </div>
+
+                <div id="coding-practice" class="content-page">
+                    <h2 id="t1">Coding Interview Question Guide</h2>
+                    <p>Practicing for coding questions takes a lot of time, effort, and focus. Let’s
+                        break down the top Google coding questions as well as actionable advice to
+                        prepare.</p>
+                    
+                </div>
+
+                <div id="behavioral-questions" class="content-page">
+                    <h2 id="t1">Behavioral Interview Question Guide
+                    </h2>
+                    <p>Behavioral interviews are often overlooked by software development
+                        candidates. In reality, this is the interview that sometimes will make or break
+                        you as a candidate. Google cares deeply about their values, so if you come
+                        unprepared for these questions, they’ll notice it.</p>
+                    <p>Cultural and behavioral interviews are there to weed out the people who may
+                        have the skills but don’t have the mentality. Let’s dive into Google behavioral
+                        interviews.</p>
+                    <h2 id="t2">What to expect from a Google behavioral interview </h2>
+                    
+                    <p>Behavioral interviews at Google test how you act in employment-related
+                        situations or conflicts, both positive and negative. Behavioral interviews help
+                        an employer decide if you’re someone they want to work with. These
+                        interviews will ask you to reflect on your past performance and behaviors to
+                        gain a sense of how you act under pressure and how you understand
+                        professionalism. You can expect three types of questions:</p>
+
+                        <ul>
+                            <li>Past experiences</li>
+                            <li>Hypothetical situations</li>
+                            <li>Values-based</li>
+                        </ul>
+                        <h2 id="t2">How to prepare for behavioral interviews</h2>
+
+                    <p>Google has outlined 8 steps for preparing for behavioral interview questions.
+                        Study these and use them to shape your preparation and answers.</p>
+
+                        <ul>
+                            <li><strong>Predict the future</strong>You can anticipate most of the questions you will
+                                be asked. You have the resources to prepare your answers. See below for
+                                10 common questions.</li>
+                            <li><strong>Plan.</strong> Write your answers down. Practice strategically. Don’t wing the
+                                behavioral questions. Think back to your work as an intern or other past
+                                experiences. Write down specific examples or notable accomplishments.</li>
+                            <li><strong>Have a backup plan.</strong> Google recommends having 3 answers per
+                                question. This helps you prepare diverse, interesting answers.</li>
+                            <li><strong>Explain.</strong>Google asks you to explain your thought process and
+                                decision-making. Explicitly stating your assumptions and processes
+                                helps you stand out.</li>
+                            <li><strong>Improve.</strong>Google encourages you to always focus on improvement. You
+                                can start with a brute force answer, but then work through how you
+                                could improve your process.</li>
+                            <li><strong>Explain.</strong>Google wants answers that relate directly to tangible
+                                growth, change, or demonstration of skill.</li>
+                                        <li><strong>Clarify.</strong>You can use open-ended questions to offer insight into your
+                                            value as a candidate.</li>
+                                            <li><strong>Practice.</strong>Google encourages you to practice aloud to construct clearer
+                                                answers. Ask a friend to conduct a mock interview or record yourself
+                                                answering questions.</li>
+                        </ul>
+
+                    <p>Remember, Google is looking for candidates who demonstrate leadership, innovation, and the ability to work well in a team. When preparing your answers, focus on examples that highlight these qualities. Be honest and specific in your responses, and be prepared to discuss both successes and failures. Google values candidates who can learn from their experiences and apply those lessons to future challenges.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src = "G.js"> </script>
+</body>
+</html>
+
